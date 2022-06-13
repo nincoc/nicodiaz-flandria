@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.logoDesktop {
+    width: 100px;
+}
+
+/* GRILLA PRINCIPAL */
+.grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "nav nav nav nav"
+        "header header header header"
+        "primeraSeccion primeraSeccion form form"
+        "footer footer footer footer";
+    background-color: #03045e;
+
+}
+
+/* NAVEGADOR */
+.nav {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav ul {
+    display: flex;
+
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav a {
+    color: #D1CB9F;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav li:hover {
+    background-color: #0096c7;
+}
+
+/* HEADER */
+.header {
+    grid-area: header;
+    background-color: #D1CB9F;
+    color: black;
+    min-height: 20vh;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 1rem;
+}
+
+.header p {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* PRIMERA SECCION */
+
+.primeraSeccion {
+    grid-area: primeraSeccion;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primeraSeccion h2 {
+    font-size: 2rem;
+}
+
+.primeraSeccion p {
+    max-width: 500px;
+    text-align: center;
+    margin: 1rem;
+}
+
+.primeraSeccion button {
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+/* FORMULARIO */
+
+.form {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 20vh;
+}
+
+.form h3 {
+    font-size: 2rem;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.form input {
+    height: 2.5rem;
+    width: 300px;
+    margin: 1rem;
+}
+
+.form input[type=submit]:hover {
+    background-color: #D1CB9F;
+    color: black;
+}
+
+/* FOOTER */
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 1rem;
+    color: #D1CB9F;
+}
+
+.footer i {
+    font-size: 1rem;
+    color: #D1CB9F;
+    padding: 10px;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 425px) {
+    .grilla{
+        grid-template-areas:
+        "nav nav nav nav"
+        "header header header header"
+        "primeraSeccion primeraSeccion primeraSeccion primeraSeccion"
+        "form form form form"
+        "footer footer footer footer";
+    }
+
+    .nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+}
