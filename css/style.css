@@ -44,7 +44,9 @@
 }
 
 .nav li:hover {
-    background-color: #0096c7;
+    transition: .3s;
+    transform: scale(1.05);
+
 }
 
 /* HEADER */
@@ -119,6 +121,12 @@
 .form input[type=submit]:hover {
     background-color: #D1CB9F;
     color: black;
+}
+
+.form input:focus{
+    transform: scale(1.02);
+    transition: .3;
+    outline: none;
 }
 
 /* FOOTER */
