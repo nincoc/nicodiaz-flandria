@@ -20,6 +20,18 @@
 
 }
 
+/* GRILLA CONTACTO */
+.grillaContacto {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr 0.9fr;
+    grid-template-areas:
+        "nav nav nav"
+        "headerContacto headerContacto headerContacto"
+        "form2 form2 form2"
+        "footer footer footer";
+    background-color: #03045e;
+}
+
 /* NAVEGADOR */
 .nav {
     grid-area: nav;
@@ -65,6 +77,12 @@
 .header p {
     max-width: 850px;
     margin: 0 auto;
+}
+
+.headerContacto {
+    grid-area: headerContacto;
+    text-align: center;
+    background-color: #D1CB9F;
 }
 
 /* PRIMERA SECCION */
@@ -123,10 +141,21 @@
     color: black;
 }
 
-.form input:focus{
-    transform: scale(1.02);
-    transition: .3;
-    outline: none;
+.form2 {
+    grid-area: form2;
+    display: flex;
+    background-color: #D1CB9F;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.form2 div{
+    display: flex;
+    flex-direction: column;
+    
 }
 
 /* FOOTER */
@@ -151,16 +180,16 @@
 /* MEDIA QUERY */
 
 @media (max-width: 425px) {
-    .grilla{
+    .grilla {
         grid-template-areas:
-        "nav nav nav nav"
-        "header header header header"
-        "primeraSeccion primeraSeccion primeraSeccion primeraSeccion"
-        "form form form form"
-        "footer footer footer footer";
+            "nav nav nav nav"
+            "header header header header"
+            "primeraSeccion primeraSeccion primeraSeccion primeraSeccion"
+            "form form form form"
+            "footer footer footer footer";
     }
 
-    .nav ul{
+    .nav ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
