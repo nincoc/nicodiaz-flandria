@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .logoDesktop {
@@ -152,10 +153,10 @@
 
 }
 
-.form2 div{
+.form2 div {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 /* FOOTER */
@@ -191,8 +192,8 @@
 
     .nav ul {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
 
