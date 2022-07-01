@@ -8,30 +8,7 @@
     width: 100px;
 }
 
-/* GRILLA PRINCIPAL */
-.grilla {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "nav nav nav nav"
-        "header header header header"
-        "primeraSeccion primeraSeccion form form"
-        "footer footer footer footer";
-    background-color: #03045e;
 
-}
-
-/* GRILLA CONTACTO */
-.grillaContacto {
-    display: grid;
-    grid-template-columns: 1fr 1.1fr 0.9fr;
-    grid-template-areas:
-        "nav nav nav"
-        "headerContacto headerContacto headerContacto"
-        "form2 form2 form2"
-        "footer footer footer";
-    background-color: #03045e;
-}
 
 /* NAVEGADOR */
 .nav {
@@ -63,53 +40,66 @@
 }
 
 /* HEADER */
-.header {
-    grid-area: header;
-    background-color: #D1CB9F;
-    color: black;
-    min-height: 20vh;
-    text-align: center;
-}
 
-.header h1 {
-    margin: 1rem;
-}
 
-.header p {
-    max-width: 850px;
-    margin: 0 auto;
-}
+/* MAIN */
 
-.headerContacto {
-    grid-area: headerContacto;
-    text-align: center;
-    background-color: #D1CB9F;
-}
-
-/* PRIMERA SECCION */
-
-.primeraSeccion {
-    grid-area: primeraSeccion;
-    margin: 2rem;
+.top {
+    background-image: url(https://www.tabacodeliaryentubar.com/wp-content/uploads/2021/02/tabaco-liar-1024x559.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    padding: 5rem;
+    gap: 2rem;
+    
+}
+
+.top h1{
+    color: white;
+}
+
+.top p{
+    color: white;
+    padding: 2rem;
+}
+
+.primeraSeccion{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+    justify-content:center;
+    max-width: 1200px;
+
+}
+
+.calidad{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 2rem;
     align-items: center;
 }
 
-.primeraSeccion h2 {
-    font-size: 2rem;
-}
-
-.primeraSeccion p {
-    max-width: 500px;
+.calidad button{
+    width: 200px;
     text-align: center;
-    margin: 1rem;
+    transition: all 0.4s;
 }
 
-.primeraSeccion button {
-    padding: 0.5rem;
-    margin: 1rem;
+.calidad button:hover{
+    background-color: black;
+    color: white;
 }
+
+.formulario{
+    padding: 2rem;
+
+}
+
 
 /* FORMULARIO */
 
@@ -142,8 +132,73 @@
     color: black;
 }
 
+/* Productos */
+
+.tarjetas{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main h1{
+    text-align: center;
+    padding: 2rem;
+    background-color: black;
+    color: white;
+}
+
+/* Quienes somos */
+
+.qsomos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    padding: 10rem;
+    
+}
+
+.qsomosTop p{
+    background-color: black;
+    color: white;
+    padding: 3rem;
+    font-size: 18px;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.qsomosTop img{
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.qsomosAbj p{
+    background-color: black;
+    color: white;
+    padding: 3rem;
+    font-size: 18px;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.qsomosAbj img{
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+
+
+
+/* Contacto */
 .form2 {
-    grid-area: form2;
+    
     display: flex;
     background-color: #D1CB9F;
     flex-direction: column;
@@ -162,9 +217,11 @@
 /* FOOTER */
 
 .footer {
-    grid-area: footer;
+    
     text-align: center;
+    padding: 5rem;
 }
+
 
 .footer p {
     text-align: center;
@@ -176,6 +233,11 @@
     font-size: 1rem;
     color: #D1CB9F;
     padding: 10px;
+    transition: all 0.4s;
+}
+
+.footer i:hover{
+    color: black;
 }
 
 /* MEDIA QUERY */
