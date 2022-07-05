@@ -1,0 +1,19 @@
+h1{
+	@extend %estiloTitulos
+}
+
+.form2 {
+	display: flex;
+	background-color: white;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1rem;
+	div {
+		display: flex;
+		flex-direction: column;
+        padding: 5rem;
+        justify-content: space-between;
+        gap: 1rem;
+	}
+}

@@ -1,0 +1,15 @@
+.tarjetas {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.main {
+	h1 {
+		text-align: center;
+		padding: 2rem;
+		background-color: black;
+		color: white;
+	}
+}

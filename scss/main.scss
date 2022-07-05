@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logoDesktop {
+    width: 100px;
+}
+
+@import './variables/extend';
+
+@import './secciones/index';
+@import './secciones/productos';
+@import './secciones/quienessomos';
+@import './secciones/tienda';
+@import './secciones/contacto';

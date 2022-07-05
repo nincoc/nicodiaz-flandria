@@ -1,0 +1,13 @@
+﻿Actualización del index para SEO.
+
+
+1.Apliqué unas cinco keywords relacionadas a lo que se nombra en la página.
+
+
+2.Agregué algunos h1 que faltaban en pages ya trabajadas.
+
+
+3.Optimicé imágenes.
+
+
+4.Generé un sidemap del proyecto.
